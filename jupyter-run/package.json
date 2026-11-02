@@ -1,0 +1,18 @@
+{
+  "name": "autotest-ui-tests",
+  "version": "1.0.0",
+  "description": "JupyterLab autotest Integration Tests",
+  "private": true,
+  "scripts": {
+    "start": "uv run jupyter lab --config $JUPYTER_CONFIG_PATH",
+    "test": "jlpm playwright test",
+    "test:update": "jlpm playwright test --update-snapshots"
+  },
+  "devDependencies": {
+    "@jupyterlab/galata": "^5.6.2",
+    "@playwright/test": "^1.62.1"
+  },
+  "dependencies": {
+    "playwright": "^1.62.1"
+  }
+}
